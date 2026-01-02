@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCIs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<div class="background">
+    <nav>
+        <ul>
+            </a>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">What is BCIs</a></li>
+            <li><a href="#game">Build-BCI Simulator</a></li>
+            <li><a href="#application">Applications</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+
+    </nav>
+    <section id="home">
+        <div class="glass-container">
+            <h1 class="glass-name">Brain-Computer Interfaces<span>(BCIs)</span>
+                <h5 class="info">Connecting the human brain directly to machines.</h5>
+                <p class="glass-subtitle">This website introduces the fundamentals of Brain-Computer-Interfaces,<span
+                        class="highlight">explaing how brain signals are recorded,processed,and transformed</span> into
+                    meaningful actions that assist and empower humans.</p>
+        </div>
+</div>
+</section>
+<div class="bg-animation">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+</div>
+
+<section id="work">
+       <h2 class="BCIsWork"><span>What is BCIs:</span></h2>
+        <p class="text">
+                <strong>Brain-Computer-Interface(BCIs)</strong>is a direct communication pathway <br>
+                between an enhanced or wired brain and an external device .
+            </p>
+              <p class="text1">BCIs work by detecting electrical signals from the brain using sensors<br>
+            (EEG-Electroencephalogram) on the scalp or inside the head-and converting them into digital<br>
+            commands.This allows individuals to :</p>
+            <div class="list">
+            <ul>
+                <li>Communicate and type on screens using only thought 💬</li>
+                <li>Control assistive technology like robotic limbs or wheelchairs🦾</li>
+                <li>Enhance immersion in gamming and virtual reality🎮 </li>
+            </ul>
+            </div>
+        <p class="learn-more">
+          Wand to understand how BCIs read brain signals using <strong>EEG</strong>?
+          <a href="how-it-work.html">Learn how it works.</a>
+        </p>
+</section>
+
+<section id="game">
+      <h2 class="game"><span>Build-BCI Simulator:</span></h2>
+      <p class="choose">
+       1© Choose Imagined Movement 
+      </p>
+      <div class="handContainer">
+        <button class="hand"data-hand="left">
+            <img src="./assets/left.png"alt='left hand'>
+             <span>Left Hand</span>
+        </button>
+         <button class="hand" data-hand="right">
+            <img src="./assets/right.png"alt='right hand'>
+             <span>Right Hand</span>
+        </button>
+      </div>
+
+
+    <div class="buttonContainer hidden"id="scroll">
+         <p class="choose">
+       2© Signal Acquistion
+      </p>
+      <button id="startEEG">Start EEG</button>
+      </div>
+
+<div class="Visualzation hidden" id="eegVisual">
+      <p class="choose">
+       3© Visualzation
+      </p>
+      <div class="images">
+        <div class="box">
+        <img id="brainimg"src="./assets/brain_11604100.png"alt="brain">
+        <p class="img-title">Brain</p>
+        </div>
+        <div class="arrow-box">
+          <span class="EEG">EEG</span>
+        <img src="./assets/right-arrow_3550091.png"alt="arrow">
+        </div>
+         <div class="box">
+        <img src="./assets/computerrecord.png"alt="computer">
+        <p class="img-title">Computer</p>
+        </div>
+         <img src="./assets/right-arrow_3550091.png"alt="arrow">
+           <div class="box">
+         <img src="./assets/robotic-arm.png"alt="arm">
+         <p class="img-title">Robotic Arm</p>
+         </div>
+      </div>
+
+</div>
+
+</section>
+
+  <section id="application">
+        <h2 class="application"><span>Applications of BCIs:</span></h2>
+         <div class="new-container">
+                <div class="new-card">
+                    <img src="./assets/medical.png" alt="leadership">
+                    <h3>Medical</h3>
+                    <p>Assistive devices and rehabilitation for patients.</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/communication.png" alt="communication">
+                    <h3>Communication</h3>
+                    <p>Type or send commands using brain signals.</p>
+                </div>
+
+                <div class="new-card">
+                    <img src="./assets/fatigue.png" alt="fatigue">
+                    <h3>Fatigue Monitoring</h3>
+                    <p>Monitor mental or physical tiredness in real time.</p>
+                </div>
+ 
+                <div class="new-card">
+                    <img src="./assets/sleep-quality.png" alt="sleep">
+                    <h3>Sleep Quality</h3>
+                    <p>Track brain activity during sleep for better rest.</p>
+                </div>
+                 <div class="new-card">
+                    <img src="./assets/joystick.png" alt="game">
+                    <h3>Gaming</h3>
+                    <p>Control games or VR experiences with thought.</p>
+                </div>
+
+
+  </section>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

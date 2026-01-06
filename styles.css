@@ -103,10 +103,11 @@ nav{
     display: block;
     text-align: left;
     width: 100%;
+
     margin-left: 0;
 }
- }
 
+}
 
 .background {
     background-image: url("./assets/Brain-right.jpg");
@@ -555,7 +556,8 @@ nav{
 
     .info {
         font-weight: 700;
-        font-size: 12px;
+        font-size:12px;
+        left:40px;
         top: 150px;
 
 
@@ -578,16 +580,15 @@ nav{
 
     /*it was 440*/
     .glass-container {
-        width:180px;
+      
         top: 300px;
-        padding: 180px 10px;
-        left: 145px;
 
     }
 
     .glass-name {
         top: 500px;
         font-size: 25px;
+        font-style: italic;
     }
 
     .glass-subtitle {
@@ -600,7 +601,11 @@ nav{
     }
 
     .info {
-        top: 235px;
+        top:110px;
+        width:200px;
+        font-style: italic;
+        line-height: 15px;
+
 
     }
 
@@ -623,8 +628,8 @@ nav{
     }
 .info{
  position: absolute;
-        top:270px;
-    left:0}
+        top:260px;
+    left: 0;}
 
     .glass-subtitle {
         visibility:hidden;
@@ -632,14 +637,15 @@ nav{
 
 
     .glass-name{
+        line-height:30px;
          font-style: italic;
     }
 
     .glass-container {
 
         width:200px;
-        left:155px;
-        top:275px;
+        left:180px;
+        top:150px;
 
 
     }
@@ -651,9 +657,8 @@ nav{
 @media(max-width:412px){
     
     .glass-container {
-
         width:200px;
-        top: 275px;
+        top:150px;
 
 
     }}
@@ -662,28 +667,41 @@ nav{
 @media(max-width:370px) {
     .glass-container {
         width:200px;
-        top:265px;
-        left: 130px;
+        top:135px;
+        left:180px;
 
     }
 
     .info {
         left: 0px;
+    }
+
+    .glass-name{
+        font-weight: bold;
+        font-size:21px;
+    }
+    .info{
+             font-weight: bold;
+        font-size:11px;
+
     }
 
 }
 
 @media(max-width:361px) {
     .glass-container {
-        width: 150px;
+        width:200px;
         top: 260px;
         padding: 180px 5px;
-        left: 120px;
+        left: 130px;
+
 
     }
 
     .info {
+        font-size: 11px;
         left: 0px;
+        top:250px;
     }
 
 }

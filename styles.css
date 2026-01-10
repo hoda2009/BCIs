@@ -953,13 +953,12 @@ nav{
 
 #game h2 {
     font-family: 'Montserrat', sans-serif;
- margin-top:-50px;
-    padding-left: 180px;
+ /*margin-top:-50px;*/
+    padding-left:10%;
     font-size: 50px;
     color: white;
     -webkit-background-clip: text;
     background-clip: text;
-  
     -webkit-text-fill-color: rgb(235, 229, 228);
     text-shadow: 0 0 15px rgba(87, 90, 252, 0.8),
         0 0 30px rgba(238, 32, 13, 0.6);
@@ -1244,7 +1243,7 @@ nav{
 
 .application{  font-family: 'Montserrat', sans-serif;
     padding-top:10px;
-    padding-left: 160px;
+    padding-left:10%;
     font-size: 50px;
     color: white;
     -webkit-background-clip: text;
@@ -1440,4 +1439,63 @@ h3{
     #work h2 span {
         font-size: 30px; /* Adjusts the title for mobile */
     }
+    #game h2 span{
+        font-size: 30px;
+    }
+    #application h2 span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .images {
+        display: flex;
+        flex-direction: row; /* Keep them in a row */
+        gap: 5px;            /* Very small gap to save space */
+        justify-content: space-around; 
+        width: 100%;
+        padding: 0;
+    }
+
+    .box {
+        width: 30%;          /* 30% + 30% + 30% = 90% (Perfect fit!) */
+    }
+
+    .images img {
+        width: 100%;         /* The image fills its 30% box */
+        height: auto;
+    }
+
+    .img-title {
+        font-size: 12px;     /* Text must be small to stay on one line */
+        margin-top: 10px;
+    }
+}
+
+
+
+.footer{
+    
+    border-top: 1px solid #b28feb;
+    text-align: center;
+    margin-top:150px;
+    padding: 20px 0;
+       box-shadow: 0 0 25px rgba(87, 90, 252, 0.6),
+        0 0 30px rgba(238, 32, 13, 0.3);
+ background: linear-gradient(90deg,
+           #94c3f2,
+            #9950d4,
+            #7ab3e1,
+            #9950d4,
+            #6eacea);
+    background-size: 400% 400%;
+    margin-bottom: 0px;}
+
+
+.footer p{
+    font-family: 'Poppins',sans-serif;
+
+    font-size: 20px;
+font-weight: 600;
+color:#2b024d;
 }

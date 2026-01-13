@@ -1124,6 +1124,7 @@ nav{
     }
 }
 
+
 .img-title{
     margin-top:25px;
     font-size:30px;
@@ -1166,8 +1167,33 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
+ 
+}
+@media screen and (max-width: 480px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+
+    .arrow-box {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+  
+    .arrow-box img {
+        width:130px !important;  
+        height: auto;
+        transform: rotate(90deg); 
+        margin: 20px 0; 
+    }
+}
 .EEG{
     font-size:24px;
     color:#C0C0C0;

@@ -569,6 +569,10 @@ nav{
         border: none
     }
 
+.handContainer {
+    gap:50px;
+}
+
 
 
 
@@ -620,6 +624,32 @@ nav{
         display: none;
     }
 }
+@media(max-width:466px){
+    .info {
+        top:110px;
+        width:200px;
+        font-style: italic;
+        line-height: 15px;
+
+    }
+    .glass-container {
+      
+        top: 300px;
+
+    }
+    .glass-name {
+        top: 500px;
+        font-size: 26px;
+        font-style: italic;
+    }
+
+.handContainer {
+    gap:40px;
+}
+
+      
+
+}
 
 @media(max-width:444px) {
     
@@ -660,6 +690,9 @@ nav{
 
 
     }
+.handContainer {
+    gap:20px;
+}
 
 
 }
@@ -699,13 +732,16 @@ nav{
         left:185px;
         top:140px;
 
-
     }
 .info{
     line-height:18px;
     font-style: italic;
     font-size:13px;
-}}
+}
+.handContainer {
+    gap:20px;
+}
+}
 @media(max-width:412px){
     
     .glass-container {
@@ -716,7 +752,7 @@ nav{
     }}
 
 
-@media(max-width:370px) {
+@media(max-width:377px) {
     .glass-container {
         width:200px;
         top:128px;
@@ -726,6 +762,7 @@ nav{
 
     .info {
         left: 0px;
+
     }
 
     .glass-name{
@@ -735,7 +772,7 @@ nav{
     .info{
              font-weight: bold;
         font-size:11px;
-        width: 200px;
+        width: 170px;
 
     }
 
@@ -831,6 +868,8 @@ nav{
     margin-top: 50px
 
 }
+
+
 
 @keyframes goldMove {
     0% {
@@ -1122,6 +1161,10 @@ nav{
     .EEG {
         margin-bottom: 5px;
     }
+    .choose{
+        font-size: 25px;
+    }
+
 }
 
 
@@ -1171,6 +1214,7 @@ nav{
  
 }
 @media screen and (max-width: 480px) {
+
     .images {
         display: flex;
         flex-direction: column;
@@ -1188,7 +1232,7 @@ nav{
 
   
     .arrow-box img {
-        width:130px !important;  
+        width:120px !important;  
         height: auto;
         transform: rotate(90deg); 
         margin: 20px 0; 
@@ -1242,7 +1286,6 @@ nav{
 
 
 
-
 .learn-more a{
     text-decoration: none;
     padding-right:10%;
@@ -1284,21 +1327,19 @@ nav{
 
 }
 
-
-.application{  font-family: 'Montserrat', sans-serif;
-    padding-top:10px;
+#application h2{
+    font-family: 'Montserrat', sans-serif;
+ /*margin-top:-50px;*/
     padding-left:10%;
     font-size: 50px;
     color: white;
     -webkit-background-clip: text;
     background-clip: text;
-    /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
     -webkit-text-fill-color: rgb(235, 229, 228);
     text-shadow: 0 0 15px rgba(87, 90, 252, 0.8),
         0 0 30px rgba(238, 32, 13, 0.6);
-    animation: goldMove 6s linear infinite;
+    animation: goldMove 6s linear infinite;}
 
-}
 
 @keyframes goldMove {
     0% {
@@ -1325,13 +1366,17 @@ nav{
 .new-container {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 100px;
             flex-wrap: wrap;
             padding-top:80px;
-            padding-left: 160px;
-            padding-right: 160px;
+    
+        
+           
             
         }
+
+
 
         .new-card p {
             display: flex;
@@ -1339,9 +1384,9 @@ nav{
             justify-content: center;
             text-align: center;
             align-items: center;
-            font-family: italic;
+            font-style: italic;
             padding-bottom:32px;
-            font-weight: 600;
+            font-weight: 800;
             background: linear-gradient(90deg,
                     #4A00E0,
                     #c4e22d,
@@ -1354,7 +1399,7 @@ nav{
             background-clip: text;
             color: transparent;
             margin-bottom: 50px;
-            font-size: 18px;
+            font-size: 19px;
         }
 
         @keyframes galaxyMove {
@@ -1372,7 +1417,7 @@ nav{
         }
 
         .new-card {
-            width:250px;
+            width: 250px;
             height:300px;
             border: 4px solid #b28feb;
             border-radius: 15px;
@@ -1394,6 +1439,14 @@ nav{
             width: 140px;
             height: auto;
             object-fit: contain;
+        }
+
+        @media(max-width:500px){
+              .new-card img {
+                width:120px;
+              }
+              
+
         }
 
         p.time {

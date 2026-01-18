@@ -14,28 +14,143 @@ body {
     max-width: 100%;
  
 }
-nav{
+nav {
     position: fixed;
     width: 100%;
-      z-index: 100;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
+
+
 .topnav {
-  background:rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: 1px solid rgba(255,255,255,0.2);
-  overflow: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;   
+    align-items: center;   
+    padding: 0 20px;
+    height: 70px;       
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-size: 28px;      
+    flex:0 1 auto;
+}
+
+.logo-container i {
+    color: rgb(219, 142, 142);
+    -webkit-text-fill-color: rgb(173, 187, 215);
+    text-shadow: 0 0 15px rgba(87, 90, 252, 0.8), 0 0 30px rgba(238, 32, 13, 0.6);
+}
+.topnav a{
+    margin:0 auto;
+    
 
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  font-size:20px;
+
+.topnav a:not(.icon) {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    color: rgba(251, 247, 251, 0.934);
+    text-align: center;
+    margin: 0;
+    padding:0 20px;
+    text-decoration: none;
+    font-size:25px;
+    transition: all 0.3s ease;
 }
+
+.topnav a:not(.icon):first-of-type {
+    margin-left:120px;
+}
+.topnav a:not(.icon):last-of-type {
+    margin-right:0 auto;
+}
+
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnav {
+        display: block; 
+        height: auto;
+        padding: 0;
+    }
+
+    .topnav a:not(.icon) {
+        display: none; 
+        
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 20px;
+    }
+
+    .logo-container {
+        display: none;
+
+    }
+
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align:center;
+        margin: 0;     
+        padding: 15px 25px;
+        background: rgba(0,0,0,0.1);
+    }
+    .topnav {
+        display: block; 
+        height: auto; 
+        padding: 0;
+        min-height: 0; 
+    }
+
+    
+    .logo-container {
+        display: none !important;
+    }
+
+    .topnav a:not(.icon) {
+        display: none; 
+        margin-left: 0 !important; 
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        padding: 20px;
+        margin: 0;
+    }
+}
+.logo-container {
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo-container i {
+    filter: drop-shadow(0 0 5px rgba(100, 169, 238, 0.8));
+    color: #64a9ee;
+}
+
+
 
 
 
@@ -86,35 +201,48 @@ nav{
 
 }
 @media screen and (max-width: 600px) {
- .topnav a:not(.icon){
+  .topnav a:not(.icon) {
     display: none;
- }
-.topnav a.icon{
-    float:right;
+  }
+.topnav a:not(.icon){
+    font-size:20px;
+}
+.logo-container{
+    display: none;
+
+}
+  .topnav a.icon {
+    float: right;
     display: block;
-}
-.topnav.responsive{
-    position: relative;
-}
-.topnav.responsive.icon{
+  }
+
+
+  .topnav.responsive {
+    position: relative; 
+  }
+
+ 
+  .topnav.responsive a.icon {
     position: absolute;
-    right:0;
-    top:0;
-}
-.topnav.responsive a {
-    float:none;
+    right: 0;
+    top: 0;
+  }
+
+ 
+  .topnav.responsive a {
+    float: none;
     display: block;
     text-align: left;
-    width: 100%;
+  }
 
-    margin-left: 0;
-}
+
 .topnav{
     background: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     border: none;
 }
+
 .topnav.responsive {  background:rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: 1px solid rgba(255,255,255,0.2);
@@ -122,7 +250,9 @@ nav{
     
 }
 
+
 }
+
 
 .background {
     background-image: url("./assets/Brain-right.jpg");
@@ -569,10 +699,6 @@ nav{
         border: none
     }
 
-.handContainer {
-    gap:50px;
-}
-
 
 
 
@@ -643,9 +769,6 @@ nav{
         font-style: italic;
     }
 
-.handContainer {
-    gap:40px;
-}
 
       
 
@@ -690,9 +813,6 @@ nav{
 
 
     }
-.handContainer {
-    gap:20px;
-}
 
 
 }
@@ -732,16 +852,13 @@ nav{
         left:185px;
         top:140px;
 
+
     }
 .info{
     line-height:18px;
     font-style: italic;
     font-size:13px;
-}
-.handContainer {
-    gap:20px;
-}
-}
+}}
 @media(max-width:412px){
     
     .glass-container {
@@ -752,7 +869,7 @@ nav{
     }}
 
 
-@media(max-width:377px) {
+@media(max-width:370px) {
     .glass-container {
         width:200px;
         top:128px;
@@ -868,8 +985,6 @@ nav{
     margin-top: 50px
 
 }
-
-
 
 @keyframes goldMove {
     0% {
@@ -1073,6 +1188,16 @@ nav{
 
 
 }
+@media(max-width:500px){
+    .hand img {
+        width:70px;
+        height:75px;
+    }
+    .handContainer{
+        gap:50px;
+    }
+
+}
 
 .hand span {
     font-size: 20px;
@@ -1083,6 +1208,7 @@ nav{
     ;
     ;
 }
+
 
 .hand {
     display: flex;
@@ -1115,6 +1241,7 @@ nav{
     flex-direction: column;
 }
 
+
 #startEEG {
     background: linear-gradient(90deg, #bb96e3, #6a00ff);
     padding: 20px 15px;
@@ -1127,7 +1254,11 @@ nav{
     ;
     transition: all 0.3s ease;
 }
-
+@media(max-width:400px){
+    #startEEG{
+        width:250px
+    }
+}
 #startEEG:hover {
     transform: scale(1.1);
 }
@@ -1288,8 +1419,9 @@ nav{
 
 .learn-more a{
     text-decoration: none;
-    padding-right:10%;
-  
+    padding-left:4%;
+    font-weight: 900;
+    font-size:35px;
     background: linear-gradient(90deg,
             #64a9ee,
             #f52d06,
@@ -1303,6 +1435,9 @@ nav{
     color: #00bfff;
     text-shadow: 0 0 6px rgba(0,191,255,0.6);
         animation: Moreinfo 8s ease infinite;
+        transition: 0.3s ease;
+        text-shadow: 0.3s ease;
+        display: inline-block;
 }
 
 @keyframes Moreinfo{
@@ -1320,26 +1455,34 @@ nav{
         }
 
 .learn-more a:hover{
+    transform: scale(1.15);
     text-decoration: underline;
     text-underline-offset:10px;
-     box-shadow: 0 0 15px rgba(0,191,255,0.6);
-     padding: 15px 20px;
+
 
 }
 
-#application h2{
-    font-family: 'Montserrat', sans-serif;
- /*margin-top:-50px;*/
+
+.application{  font-family: 'Montserrat', sans-serif;
+    padding-top:10px;
     padding-left:10%;
     font-size: 50px;
     color: white;
     -webkit-background-clip: text;
     background-clip: text;
+    /*i add this just to remove the error on line 74 (-webkit-background-clip)*/
     -webkit-text-fill-color: rgb(235, 229, 228);
     text-shadow: 0 0 15px rgba(87, 90, 252, 0.8),
         0 0 30px rgba(238, 32, 13, 0.6);
-    animation: goldMove 6s linear infinite;}
+    animation: goldMove 6s linear infinite;
 
+}
+@media(max-width:500px){
+    .application{
+        padding-left: 5%;
+    }
+
+}
 
 @keyframes goldMove {
     0% {
@@ -1366,13 +1509,11 @@ nav{
 .new-container {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 100px;
             flex-wrap: wrap;
-            padding-top:80px;
-    
-        
-           
+            padding-top:60px;
+            padding-right:10%;
+            padding-left: 10%;
             
         }
 
@@ -1386,7 +1527,7 @@ nav{
             align-items: center;
             font-style: italic;
             padding-bottom:32px;
-            font-weight: 800;
+            font-weight: 600;
             background: linear-gradient(90deg,
                     #4A00E0,
                     #c4e22d,
@@ -1399,7 +1540,7 @@ nav{
             background-clip: text;
             color: transparent;
             margin-bottom: 50px;
-            font-size: 19px;
+            font-size: 18px;
         }
 
         @keyframes galaxyMove {
@@ -1427,6 +1568,7 @@ nav{
             justify-content: center;
             padding:10px;
             text-align: center;
+            padding:10px;
            
              box-shadow: 0 0 25px rgba(87, 90, 252, 0.8),
         0 0 30px rgba(238, 32, 13, 0.6);
@@ -1443,7 +1585,7 @@ nav{
 
         @media(max-width:500px){
               .new-card img {
-                width:120px;
+                width:123px;
               }
               
 
@@ -1541,25 +1683,28 @@ h3{
 @media screen and (max-width: 480px) {
     .images {
         display: flex;
-        flex-direction: row; /* Keep them in a row */
-        gap: 5px;            /* Very small gap to save space */
+        flex-direction: row;
+        gap: 5px;           
         justify-content: space-around; 
         width: 100%;
         padding: 0;
     }
 
     .box {
-        width: 30%;          /* 30% + 30% + 30% = 90% (Perfect fit!) */
+        width: 30%;      
     }
 
     .images img {
-        width: 100%;         /* The image fills its 30% box */
+        width: 100%;         
         height: auto;
     }
 
     .img-title {
-        font-size: 12px;     /* Text must be small to stay on one line */
+        font-size: 12px;    
         margin-top: 10px;
+    }
+    .handContainer{
+        gap:50px;
     }
 }
 
@@ -1590,3 +1735,13 @@ h3{
 font-weight: 600;
 color:#2b024d;
 }
+  #preloader{
+    position:fixed;
+    background-image:url("./assets/preloader-finalpro.gif");
+    width: 100vw;
+    height:100vh;
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}  

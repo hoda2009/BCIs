@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BCIs</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+      <div id="preloader"></div>
 <div class="background">
-    <nav> 
+  <nav> 
 
 <div class="topnav" id="myTopnav">
+  <div class="logo-container">
+    <i class="fa fa-brain"></i> 
+</div>
   <a href="#home" class="active">Home</a>
   <a href="#work">What are BCIs</a>
   <a href="#game">Build-BCI Simulator</a>
   <a href="#application">Applications</a>
+
+
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -74,7 +81,7 @@
     <div class="content">
       <h2 class="game"><span>Build-BCI Simulator:</span></h2>
       <p class="choose">
-       1© Choose Imagined Movement 
+       1. Choose Imagined Movement 
       </p>
       <div class="handContainer">
         <button class="hand"data-hand="left">
@@ -92,14 +99,14 @@
 
     <div class="buttonContainer hidden"id="scroll">
          <p class="choose">
-       2© Signal Acquisition
+       2. Signal Acquisition
       </p>
       <button id="startEEG">Start EEG</button>
       </div>
 
 <div class="Visualzation hidden" id="eegVisual">
       <p class="choose">
-       3© Visualization
+       3. Visualization
       </p>
       <div class="images">
         <div class="box">

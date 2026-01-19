@@ -8,10 +8,10 @@ This website introduces the concept of BCIs and allows users to experience a bas
 
 ### 🚀Features 
 1. **Movement Selection:** Choose between left or right hand imagined movements.
-2. **Signal Simulation:**Simulates brainwave acquisition using EEG signals .
-3. **Mechanical Execution:**Processes the signals to control a simulated robotic arm .
-4. **Interactive Learning:**Understand the BCI pipeline from signal detection to action .
-5. **EEG Learning Page:**A Separate page explains EEG and brain signals in detail .
+2. **Signal Simulation:** Simulates brainwave acquisition using EEG signals .
+3. **Mechanical Execution:** Processes the signals to control a simulated robotic arm .
+4. **Interactive Learning:** Understand the BCI pipeline from signal detection to action .
+5. **EEG Learning Page:** A Separate page explains EEG and brain signals in detail .
 
 
 

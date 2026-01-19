@@ -26,10 +26,10 @@ for(let i=0;i< hands.length;i++){
             brainImg.src="./assets/newRightPart.png";
 
          }
-         else if(chosenHand=="right"){
-              brainImg.src="./assets/newleft.png";
+         else {
+              brainImg.src="./assets/newleft.png";}
 
-            }
+            
             eegVisual.classList.remove("hidden")
             eegVisual.scrollIntoView({
                  behavior:"smooth",

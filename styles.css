@@ -712,6 +712,7 @@ nav {
         background-size: 120%;
 
     }
+ 
 
     /*.glass-container{
     width:200px;
@@ -1421,7 +1422,7 @@ nav {
     text-decoration: none;
     padding-left:4%;
     font-weight: 900;
-    font-size:35px;
+    font-size:clamp(25px,5vw,35px);
     background: linear-gradient(90deg,
             #64a9ee,
             #f52d06,
@@ -1734,6 +1735,14 @@ h3{
     font-size: 20px;
 font-weight: 600;
 color:#2b024d;
+}
+@media(max-width:600px){
+    .footer p{
+            font-size:15px;
+
+    }
+    
+
 }
   #preloader{
     position:fixed;

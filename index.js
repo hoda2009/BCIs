@@ -5,7 +5,7 @@ var eegVisual=document.getElementById("eegVisual")
 var brainImg=document.getElementById("brainimg")
 var chosenHand=null /*novalue*/
 for(let i=0;i< hands.length;i++){
-    hands[i].addEventListener("click",choose)
+    hands[i].addEventListener("click",choose) //placeholder
     function choose(){
         chosenHand=this.dataset.hand;  /*since i use data-hand*/
         alert("😇Start to imagine moving your "+chosenHand+" hand  🙌✨")

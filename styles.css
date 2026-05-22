@@ -15,11 +15,11 @@ body {
  
 }
 nav {
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 100;
+     position: fixed;
 }
 
 
@@ -47,6 +47,8 @@ nav {
 }
 .topnav a{
     margin:0 auto;
+  font-family: sans-serif;
+  font-size:1.2em;
     
 
 }
@@ -75,7 +77,7 @@ nav {
 .topnav .icon {
     display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width:1000px) {
     .topnav {
         display: block; 
         height: auto;
@@ -1387,6 +1389,7 @@ nav {
     padding-left: 10%;
     padding-right: 10%;
   line-height: 1.7;
+    font-family: sans-serif;
   padding-top:20px;
   letter-spacing: 1px;
     font-weight: 800;
@@ -1405,6 +1408,7 @@ nav {
     background-clip: text;
     color: transparent;
     margin-bottom: 50px;
+    font-size: 1.6em;
 
 }
 @media screen and (max-width: 768px) {
@@ -1521,6 +1525,8 @@ nav {
 
 
         .new-card p {
+              font-family: sans-serif;
+              line-height:1.7;
             display: flex;
             color: white;
             justify-content: center;
@@ -1627,7 +1633,8 @@ h3{
     text-shadow: 0 0 15px rgba(87, 90, 252, 0.8),
         0 0 30px rgba(238, 32, 13, 0.6);
     animation: goldMove 6s linear infinite;
-    color:whitesmoke
+    color:whitesmoke;
+      font-family: sans-serif;
 
 }
 
